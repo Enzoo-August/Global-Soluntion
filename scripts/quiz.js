@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
             colorRespostas(acertos);
 
             const main = document.getElementsByTagName("main")[0];
-            
-//remover acertos e erros que tinha antes
 
+// remover acertos e erros que tinha antes
             const prevAcertos = document.getElementsByClassName("acertos");
             const prevErros = document.getElementsByClassName("erros");
             if (prevAcertos.length) {
@@ -23,10 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (prevErros.length) {
                 main.removeChild(prevErros[0]);
             }
-
+//numeros de acertos e erros (calculo)
             const numAcertos = acertos.length;
-            const totalRespondidas = respostas.filter(r => r !== null).length;
-            const numErros = totalRespondidas - numAcertos;
+            const numErros = respostas.length - numAcertos;
 
 // Criar acertos
             const divAcertos = document.createElement("div");
