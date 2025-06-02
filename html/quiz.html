@@ -6,86 +6,86 @@
     <title>AquaPrev-Quiz</title>
 </head>
 <body>
-
-    <header>
+    <header></header>
         <h1>Quiz: Você sabe tudo sobre enchentes?</h1>
         <p>organizado por AquaPrev - Monitoramento Inteligente de Rios</p>
     </header>
     <main>
-        <form>
-            <div id="pergunta1">
-            <h2>Pergunta 1: O que é uma enchente?</h2>
-            <label><input type="radio" name="q1" value="a"> a) Um aumento repentino do nível da água em rios ou cidades</label>
-            <label><input type="radio" name="q1" value="b"> b) Uma tempestade de areia</label>
-            <label><input type="radio" name="q1" value="c"> c) Um terremoto</label>
-            <label><input type="radio" name="q1" value="d"> d) Uma seca prolongada</label>
+        <form id="quizForm">
+            <div class="pergunta" id="p1">
+                <h2>Pergunta 1: O que é uma enchente?</h2>
+                <label><input type="radio" id="q1a" name="q1" value="a"> a) Um aumento repentino do nível da água em rios ou cidades</label>
+                <label><input type="radio" id="q1b" name="q1" value="b"> b) Uma tempestade de areia</label>
+                <label><input type="radio" id="q1c" name="q1" value="c"> c) Um terremoto</label>
+                <label><input type="radio" id="q1d" name="q1" value="d"> d) Uma seca prolongada</label>
             </div>
-            <div id="pergunta2">
-            <h2>Pergunta 2: Qual é uma das principais causas de enchentes urbanas?</h2>
-            <label><input type="radio" name="q2" value="a"> a) Desmatamento</label>
-            <label><input type="radio" name="q2" value="b"> b) Construção de barragens</label>
-            <label><input type="radio" name="q2" value="c"> c) Impermeabilização do solo</label>
-            <label><input type="radio" name="q2" value="d"> d) Plantio de árvores</label>
+            <div class="pergunta" id="p2">
+                <h2>Pergunta 2: Qual é uma das principais causas de enchentes urbanas?</h2>
+                <label><input type="radio" id="q2a" name="q2" value="a"> a) Desmatamento</label>
+                <label><input type="radio" id="q2b" name="q2" value="b"> b) Construção de barragens</label>
+                <label><input type="radio" id="q2c" name="q2" value="c"> c) Impermeabilização do solo</label>
+                <label><input type="radio" id="q2d" name="q2" value="d"> d) Plantio de árvores</label>
             </div>
-            <div id="pergunta3">
-            <h2>Pergunta 3: Como um sensor ultrassônico pode ajudar a prever enchentes?</h2>
-            <label><input type="radio" name="q3" value="a"> a) Medindo a qualidade da água</label>
-            <label><input type="radio" name="q3" value="b"> b) Identificando animais no rio</label>
-            <label><input type="radio" name="q3" value="c"> c) Medindo a distância entre o sensor e o nível da água do rio</label>
-            <label><input type="radio" name="q3" value="d"> d) Detectando raios durante as tempestades</label>
+            <div class="pergunta" id="p3">
+                <h2>Pergunta 3: Como um sensor ultrassônico pode ajudar a prever enchentes?</h2>
+                <label><input type="radio" id="q3a" name="q3" value="a"> a) Medindo a qualidade da água</label>
+                <label><input type="radio" id="q3b" name="q3" value="b"> b) Identificando animais no rio</label>
+                <label><input type="radio" id="q3c" name="q3" value="c"> c) Medindo a distância entre o sensor e o nível da água do rio</label>
+                <label><input type="radio" id="q3d" name="q3" value="d"> d) Detectando raios durante as tempestades</label>
             </div>
-            <div id="pergunta4">
-            <h2>Pergunta 4: Qual órgão geralmente emite alertas de enchentes no Brasil?</h2>
-            <label><input type="radio" name="q4" value="a"> a) INMET</label>
-            <label><input type="radio" name="q4" value="b"> b) IBGE</label>
-            <label><input type="radio" name="q4" value="c"> c) DETRAN</label>
-            <label><input type="radio" name="q4" value="d"> d) Receita Federal</label>
+            <div class="pergunta" id="p4">
+                <h2>Pergunta 4: Qual órgão geralmente emite alertas de enchentes no Brasil?</h2>
+                <label><input type="radio" id="q4a" name="q4" value="a"> a) INMET</label>
+                <label><input type="radio" id="q4b" name="q4" value="b"> b) IBGE</label>
+                <label><input type="radio" id="q4c" name="q4" value="c"> c) DETRAN</label>
+                <label><input type="radio" id="q4d" name="q4" value="d"> d) Receita Federal</label>
             </div>
-            <div id="pergunta5">
-            <h2>Pergunta 5: O que NÃO deve ser feito durante uma enchente?</h2>
-            <label><input type="radio" name="q5" value="a"> a) Evitar contato com a água</label>
-            <label><input type="radio" name="q5" value="b"> b) Procurar abrigo em local seguro</label>
-            <label><input type="radio" name="q5" value="c"> c) Tentar atravessar áreas alagadas</label>
-            <label><input type="radio" name="q5" value="d"> d) Ouvir as autoridades</label>
+            <div class="pergunta" id="p5">
+                <h2>Pergunta 5: O que NÃO deve ser feito durante uma enchente?</h2>
+                <label><input type="radio" id="q5a" name="q5" value="a"> a) Evitar contato com a água</label>
+                <label><input type="radio" id="q5b" name="q5" value="b"> b) Procurar abrigo em local seguro</label>
+                <label><input type="radio" id="q5c" name="q5" value="c"> c) Tentar atravessar áreas alagadas</label>
+                <label><input type="radio" id="q5d" name="q5" value="d"> d) Ouvir as autoridades</label>
             </div>
-            <div id="pergunta6">
-            <h2>Pergunta 6: Qual destes é um risco associado às enchentes?</h2>
-            <label><input type="radio" name="q6" value="a"> a) Contaminação da água</label>
-            <label><input type="radio" name="q6" value="b"> b) Aumento da biodiversidade</label>
-            <label><input type="radio" name="q6" value="c"> c) Redução de doenças</label>
-            <label><input type="radio" name="q6" value="d"> d) Melhora do trânsito</label>
+            <div class="pergunta" id="p6">
+                <h2>Pergunta 6: Qual destes é um risco associado às enchentes?</h2>
+                <label><input type="radio" id="q6a" name="q6" value="a"> a) Contaminação da água</label>
+                <label><input type="radio" id="q6b" name="q6" value="b"> b) Aumento da biodiversidade</label>
+                <label><input type="radio" id="q6c" name="q6" value="c"> c) Redução de doenças</label>
+                <label><input type="radio" id="q6d" name="q6" value="d"> d) Melhora do trânsito</label>
             </div>
-            <div id="pergunta7">
-            <h2>Pergunta 7: O que é impermeabilização do solo?</h2>
-            <label><input type="radio" name="q7" value="a"> a) Cobrir o solo com materiais que impedem a infiltração de água</label>
-            <label><input type="radio" name="q7" value="b"> b) Plantar árvores</label>
-            <label><input type="radio" name="q7" value="c"> c) Construir poços artesianos</label>
-            <label><input type="radio" name="q7" value="d"> d) Fazer jardins verticais</label>
+            <div class="pergunta" id="p7">
+                <h2>Pergunta 7: O que é impermeabilização do solo?</h2>
+                <label><input type="radio" id="q7a" name="q7" value="a"> a) Cobrir o solo com materiais que impedem a infiltração de água</label>
+                <label><input type="radio" id="q7b" name="q7" value="b"> b) Plantar árvores</label>
+                <label><input type="radio" id="q7c" name="q7" value="c"> c) Construir poços artesianos</label>
+                <label><input type="radio" id="q7d" name="q7" value="d"> d) Fazer jardins verticais</label>
             </div>
-            <div id="pergunta8">
-            <h2>Pergunta 8: Qual destes é um sinal de alerta para enchentes?</h2>
-            <label><input type="radio" name="q8" value="a"> a) Céu limpo</label>
-            <label><input type="radio" name="q8" value="b"> b) Chuva intensa e contínua</label>
-            <label><input type="radio" name="q8" value="c"> c) Temperatura baixa</label>
-            <label><input type="radio" name="q8" value="d"> d) Vento fraco</label>
+            <div class="pergunta" id="p8">
+                <h2>Pergunta 8: Qual destes é um sinal de alerta para enchentes?</h2>
+                <label><input type="radio" id="q8a" name="q8" value="a"> a) Céu limpo</label>
+                <label><input type="radio" id="q8b" name="q8" value="b"> b) Chuva intensa e contínua</label>
+                <label><input type="radio" id="q8c" name="q8" value="c"> c) Temperatura baixa</label>
+                <label><input type="radio" id="q8d" name="q8" value="d"> d) Vento fraco</label>
             </div>
-            <div id="pergunta9">
-            <h2>Pergunta 9: O que fazer após uma enchente?</h2>
-            <label><input type="radio" name="q9" value="a"> a) Beber água de qualquer fonte</label>
-            <label><input type="radio" name="q9" value="b"> b) Limpar a casa com água potável e desinfetante</label>
-            <label><input type="radio" name="q9" value="c"> c) Voltar imediatamente para casa</label>
-            <label><input type="radio" name="q9" value="d"> d) Ignorar orientações das autoridades</label>
+            <div class="pergunta" id="p9">
+                <h2>Pergunta 9: O que fazer após uma enchente?</h2>
+                <label><input type="radio" id="q9a" name="q9" value="a"> a) Beber água de qualquer fonte</label>
+                <label><input type="radio" id="q9b" name="q9" value="b"> b) Limpar a casa com água potável e desinfetante</label>
+                <label><input type="radio" id="q9c" name="q9" value="c"> c) Voltar imediatamente para casa</label>
+                <label><input type="radio" id="q9d" name="q9" value="d"> d) Ignorar orientações das autoridades</label>
             </div>
-            <div id="pergunta10">
-            <h2>Pergunta 10: Qual destes equipamentos pode ajudar no monitoramento de enchentes?</h2>
-            <label><input type="radio" name="q10" value="a"> a) Sensor de nível de água</label>
-            <label><input type="radio" name="q10" value="b"> b) Termômetro</label>
-            <label><input type="radio" name="q10" value="c"> c) Bússola</label>
-            <label><input type="radio" name="q10" value="d"> d) Binóculo</label>
+            <div class="pergunta" id="p10">
+                <h2>Pergunta 10: Qual destes equipamentos pode ajudar no monitoramento de enchentes?</h2>
+                <label><input type="radio" id="q10a" name="q10" value="a"> a) Sensor de nível de água</label>
+                <label><input type="radio" id="q10b" name="q10" value="b"> b) Termômetro</label>
+                <label><input type="radio" id="q10c" name="q10" value="c"> c) Bússola</label>
+                <label><input type="radio" id="q10d" name="q10" value="d"> d) Binóculo</label>
             </div>
-            <button type="submit">Enviar respostas</button>
+            <button type="submit" id="btnSubmit">Enviar respostas</button>
+            <button type="button" id="btnReset">Reiniciar quiz</button>
         </form>
     </main>
+    <script src="/scripts/quiz.js"></script>
 </body>
-<script src="/scripts/quiz.js"></script>
 </html>
