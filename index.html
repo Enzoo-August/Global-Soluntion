@@ -1,71 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaPrever</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AquaPrever</title>
+  <link rel="stylesheet" href="./Styles/style.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <p>AquaPrev</p>
+      <ul>
+        <li id="colorMenu">
+          <img src="/images/Menu hamburguer.png" alt="menu hambúrguer" />
+          Opção de cores
+        </li>
+        <li>Ver níveis</li>
+        <li>Entre em contato</li>
+      </ul>
+      <div class="btn">
+        <a href="./html/quiz.html"><p>Quiz</p></a>
+      </div>
+    </nav>
 
+    <!-- Caixa de seleção de cores -->
+    <div id="colorBox" class="hidden">
+      <div class="color-option" id="color1" style="background-color: var(--cor1);"></div>
+      <div class="color-option" id="color2" style="background-color: var(--back1);"></div>
+      <div class="color-option" id="color3" style="background-color: var(--back2);"></div>
+    </div>
+  </header>
 
-    <header>
+  <main>
+    <div id="section1"></div>
+    <div id="section2"></div>
+    <div id="section3"></div>
+    <div id="section4"></div>
+    <div id="section5"></div>
+    <div id="section6"></div>
+  </main>
 
+  <footer></footer>
 
-        <nav>
-
-            <p>AquaPrev</p>
-            <ul>
-                <li>ver niveis</li>
-                <li>Entre em contato</li>
-            </ul>
-            <a href="./html/quiz.html"><p>Quiz</p></a>
-
-        </nav>
-
-        
-    </header>
-
-
-    <main>
-
-
-            <div id="section1">
-
-            </div>
-
-
-            <div id="section2">
-
-            </div>
-
-
-            <div id="section3">
-
-            </div>
-
-
-            <div id="section4">
-
-            </div>
-
-
-            <div id="section5">
-
-            </div>
-            
-
-            <div id="section6">
-
-            </div>
-
-
-    </main>
-
-
-    <footer>
-
-    </footer>
+  <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
