@@ -10,6 +10,35 @@ document.addEventListener("DOMContentLoaded", function() {
             let respostas = pegaRespostas();
             let acertos = checkAcertos(respostas);
             colorRespostas(acertos);
+
+            const main = document.getElementsByTagName("main")[0];
+            
+//remover acertos e erros que tinha antes
+
+            const prevAcertos = document.getElementsByClassName("acertos");
+            const prevErros = document.getElementsByClassName("erros");
+            if (prevAcertos.length) {
+                main.removeChild(prevAcertos[0]);
+            }
+            if (prevErros.length) {
+                main.removeChild(prevErros[0]);
+            }
+
+            const numAcertos = acertos.length;
+            const totalRespondidas = respostas.filter(r => r !== null).length;
+            const numErros = totalRespondidas - numAcertos;
+
+// Criar acertos
+            const divAcertos = document.createElement("div");
+            divAcertos.className = "acertos";
+            divAcertos.textContent = "Acertos: " + numAcertos;
+            main.appendChild(divAcertos);
+
+// Criar erros
+            const divErros = document.createElement("div");
+            divErros.className = "erros";
+            divErros.textContent = "Erros: " + numErros;
+            main.appendChild(divErros);
         });
 
         submitButton.addEventListener("mousedown", function() {
@@ -27,6 +56,16 @@ document.addEventListener("DOMContentLoaded", function() {
         resetButton.addEventListener("click", function(event) {
             event.preventDefault();
             limparRespostas();
+
+            const main = document.getElementsByTagName("main")[0];
+            const prevAcertos = document.getElementsByClassName("acertos");
+            const prevErros = document.getElementsByClassName("erros");
+            if (prevAcertos.length) {
+                main.removeChild(prevAcertos[0]);
+            }
+            if (prevErros.length) {
+                main.removeChild(prevErros[0]);
+            }
         });
 
         resetButton.addEventListener("mousedown", function() {
@@ -55,7 +94,6 @@ function pegaRespostas() {
         }
         respostas.push(resposta);
     }
-    console.log("Respostas:", respostas);
     return respostas;
 }
 
