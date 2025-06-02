@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
             divErros.className = "erros";
             divErros.textContent = "Erros: " + numErros;
             main.appendChild(divErros);
+
+            window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+        });
         });
 
         submitButton.addEventListener("mousedown", function() {
