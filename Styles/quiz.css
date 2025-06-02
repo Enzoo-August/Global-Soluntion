@@ -21,6 +21,33 @@ body {
     margin: 2rem 0;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.back {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    color: var(--cor3);
+    border: 2px solid var(--cor3);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: var(--cor2);
+    border-color: var(--cor2);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -213,4 +240,9 @@ strong {
         padding-right: 1rem;
         font-size: 1rem;
     }
+}
+.subtitle{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
