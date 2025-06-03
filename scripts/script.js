@@ -94,3 +94,13 @@ niveisButton.addEventListener("click", function () {
 //assim foi implementado um alerta para informar que não contem permmissão para acessar a página
   }
 );
+// Fazendo botão "Voltar ao Início" funcionar
+document.getElementById("volteAoInicio").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+

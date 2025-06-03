@@ -28,9 +28,14 @@ nav {
   font-size: 1rem;
 }
 
-nav p {
-  font-weight: bold;
-  color: var(--cor3);
+/* nav img{
+  width: 3.5rem;
+  height: 3.5rem;
+} */
+.logo {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -279,4 +284,44 @@ main {
 
 #rightArrow {
   right: -4.375rem; 
+}
+
+.footer{
+  width: 100%;
+  background-color: var(--cor2);
+  color: var(--cor1);
+  text-align: center;
+  padding: 1rem;
+  
+  
+}
+.footer ul, li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-weight: bold;
+}
+
+.footer img{
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--cor1);
+}
+.footer a:hover{
+
+  text-decoration: underline;
+}
+
+#volteAoInicio{
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#volteAoInicio:hover{
+  text-decoration: underline;
 }
