@@ -1,0 +1,99 @@
+:root {
+    --cor1: #090909;
+    --cor2: #3B89FD;
+    --cor3: #D9D9D9;
+    --back1: #2700C3;
+    --back2: #1E1E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--back2);
+    color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--back1);
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+nav li {
+    color: var(--cor3);
+    cursor: pointer;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+form {
+    background-color: var(--cor3);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    color: var(--cor1);
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(#fff);
+    color: var(--cor1);
+    font-size: 1rem;
+    resize: vertical;
+}
+
+form textarea {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--back1);
+    color: var(--cor3);
+}
