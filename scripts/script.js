@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const slides = [
-    "./images/SlideS1.png",
-    "./images/SlideS2.png",
-    "./images/SlideS3.png"
+    "./assets/SlideS1.png",
+    "./assets/SlideS2.png", 
+    "./assets/SlideS3.png"
   ];
 
   const captions = [
