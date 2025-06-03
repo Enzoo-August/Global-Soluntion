@@ -80,3 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
   leftArrow.addEventListener("click", prevSlide);
   rightArrow.addEventListener("click", nextSlide);
 });
+
+// Fazendo botão "Voltar ao Início" funcionar
+document.getElementById("volteAoInicio").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+
