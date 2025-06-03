@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.getElementById("leftArrow");
   const rightArrow = document.getElementById("rightArrow");
 
+  // Cria a imagem do slide e insere antes da seta direita
   const slideImage = document.createElement("img");
   slideImage.id = "slideImage";
   slideImage.src = slides[currentIndex];
@@ -54,10 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
   slideImage.style.height = "auto";
   section2.insertBefore(slideImage, rightArrow);
 
+  // Cria a legenda e insere logo abaixo da imagem (antes da seta direita)
   const slideCaption = document.createElement("p");
   slideCaption.id = "slideCaption";
   slideCaption.innerText = captions[currentIndex];
-  section2.appendChild(slideCaption);
+  section2.insertBefore(slideCaption, rightArrow);
 
   function showSlide(index) {
     slideImage.src = slides[index];

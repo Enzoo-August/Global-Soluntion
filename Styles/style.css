@@ -214,6 +214,11 @@ main {
   .divider img {
     width: 100%;
   }
+
+  /* 🔽 Oculta a imagem decorativa setaD em telas pequenas */
+  #setaD {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -234,4 +239,14 @@ main {
   .divider img {
     width: 100%;
   }
+}
+
+#section2 h1 {
+  position: relative;
+  left: -5rem;
+}
+
+#section2 #triangles {
+  position: relative;
+  left: -35rem;
 }
