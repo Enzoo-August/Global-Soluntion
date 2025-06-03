@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
             colorRespostas(acertos);
 
             const main = document.getElementsByTagName("main")[0];
-
-// remover acertos e erros que tinha antes
             const prevAcertos = document.getElementsByClassName("acertos");
             const prevErros = document.getElementsByClassName("erros");
             if (prevAcertos.length) {
@@ -22,26 +20,24 @@ document.addEventListener("DOMContentLoaded", function() {
             if (prevErros.length) {
                 main.removeChild(prevErros[0]);
             }
-//numeros de acertos e erros (calculo)
+
             const numAcertos = acertos.length;
             const numErros = respostas.length - numAcertos;
 
-// Criar acertos
             const divAcertos = document.createElement("div");
             divAcertos.className = "acertos";
             divAcertos.textContent = "Acertos: " + numAcertos;
             main.appendChild(divAcertos);
 
-// Criar erros
             const divErros = document.createElement("div");
             divErros.className = "erros";
             divErros.textContent = "Erros: " + numErros;
             main.appendChild(divErros);
 
             window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth"
-        });
+                top: document.documentElement.scrollHeight,
+                behavior: "smooth"
+            });
         });
 
         submitButton.addEventListener("mousedown", function() {
@@ -69,6 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (prevErros.length) {
                 main.removeChild(prevErros[0]);
             }
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
 
         resetButton.addEventListener("mousedown", function() {
@@ -85,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function pegaRespostas() {
     let respostas = [];
-
     for (let i = 1; i <= 10; i++) {
         let resposta = null;
         for (let letra of ["a", "b", "c", "d"]) {
@@ -125,7 +125,6 @@ function limparRespostas() {
     for (let i = 1; i <= 10; i++) {
         const divP = document.getElementById(`p${i}`);
         divP.style.backgroundColor = "";
-
         for (let letra of ["a", "b", "c", "d"]) {
             const input = document.getElementById(`q${i}${letra}`);
             if (input) {

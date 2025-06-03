@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.getElementById("leftArrow");
   const rightArrow = document.getElementById("rightArrow");
 
-  // Cria a imagem do slide e insere antes da seta direita
+
   const slideImage = document.createElement("img");
   slideImage.id = "slideImage";
   slideImage.src = slides[currentIndex];
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   slideImage.style.height = "auto";
   section2.insertBefore(slideImage, rightArrow);
 
-  // Cria a legenda e insere logo abaixo da imagem (antes da seta direita)
+
   const slideCaption = document.createElement("p");
   slideCaption.id = "slideCaption";
   slideCaption.innerText = captions[currentIndex];
@@ -83,10 +83,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const niveisButton = document.getElementById("niveis-button");
 niveisButton.addEventListener("click", function () {
-    alert("você não tem permissão para acessar esta página");
+    alert("nehum nível implementado ainda, aguarde!"); 
+// Página ainda não implementada.
+// Para que esta funcionalidade esteja disponível, é necessário que o dispositivo Arduino seja instalado fisicamente.
+// Além disso, o usuário que adquirir o dispositivo precisa permitir que os dados coletados sejam acessados publicamente.
+//caso ele não queira poderá ter acesso via api
+// Isso é essencial para garantir o funcionamento correto do sistema e o monitoramento remoto dos dados.
+// Caso contrário, não é possível obter e exibir as informações necessárias nesta página.
+//e mesmo que feita o usuário irá entrar e ver que não há dados disponíveis fazendo que a navegação seja inutil
+//assim foi implementado um alerta
   }
 );
-// Fazendo botão "Voltar ao Início" funcionar
 document.getElementById("volteAoInicio").addEventListener("click", () => {
   window.scrollTo({
     top: 0,
