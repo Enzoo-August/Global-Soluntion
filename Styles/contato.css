@@ -39,7 +39,9 @@ nav li {
     cursor: pointer;
     font-weight: bold;
 }
-
+a{
+    text-decoration: none;
+}
 main {
     flex: 1;
     display: flex;
