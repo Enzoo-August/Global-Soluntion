@@ -1,4 +1,4 @@
-
+Link do Pages: https://enzoo-august.github.io/Global-Soluntion/
 # 🌊 AquaPrever
 
 **AquaPrever** é uma aplicação web desenvolvida com HTML, CSS e JavaScript que apresenta uma solução visual e interativa para monitoramento de níveis de rios com foco em prevenção de desastres. A proposta combina hardware com software, futura utilização Arduino e integração entre C++, Python e JS para entregar um sistema completo de prevenção a enchentes (Nosso objetivo é possibilidade de integrar com smart-sampa, para que a cidade se torne mais inteligente e evitar fatalidades).
