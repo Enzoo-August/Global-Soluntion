@@ -18,14 +18,14 @@
 ```
 AquaPrever/
 ├── index.html
-├── Styles/
+├── styles/
 │   └── style.css
 ├── scripts/
 │   └── script.js
 ├── html/
 │   ├── contato.html
 │   └── quiz.html
-├── images/
+├── assets/
 │   ├── section 1.png
 │   ├── section 3.png
 │   ├── Divisor D.png
