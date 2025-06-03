@@ -86,3 +86,13 @@ niveisButton.addEventListener("click", function () {
     alert("você não tem permissão para acessar esta página");
   }
 );
+// Fazendo botão "Voltar ao Início" funcionar
+document.getElementById("volteAoInicio").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+
