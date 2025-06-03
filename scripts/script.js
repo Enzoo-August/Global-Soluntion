@@ -80,3 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
   leftArrow.addEventListener("click", prevSlide);
   rightArrow.addEventListener("click", nextSlide);
 });
+
+const niveisButton = document.getElementById("niveis-button");
+niveisButton.addEventListener("click", function () {
+    alert("você não tem permissão para acessar esta página");
+  }
+);
