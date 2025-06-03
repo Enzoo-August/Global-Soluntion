@@ -83,6 +83,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const niveisButton = document.getElementById("niveis-button");
 niveisButton.addEventListener("click", function () {
-    alert("você não tem permissão para acessar esta página");
+    alert("você não tem permissão para acessar esta página"); 
+// Página ainda não implementada.
+// Para que esta funcionalidade esteja disponível, é necessário que o dispositivo Arduino seja instalado fisicamente.
+// Além disso, o usuário que adquirir o dispositivo precisa permitir que os dados coletados sejam acessados publicamente.
+//caso ele não queira poderá ter acesso via api
+// Isso é essencial para garantir o funcionamento correto do sistema e o monitoramento remoto dos dados.
+// Caso contrário, não é possível obter e exibir as informações necessárias nesta página.
+//e mesmo que feita o usuário irá entrar e ver que não há dados disponíveis fazendo que a navegação seja inutil
+//assim foi implementado um alerta para informar que não contem permmissão para acessar a página
   }
 );
